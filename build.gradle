@@ -1,0 +1,19 @@
+
+
+apply plugin: 'java'
+sourceCompatibility = 1.9
+targetCompatibility = 1.9
+
+apply plugin: 'maven'
+
+repositories {
+    mavenLocal()
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    implementation 'org.knowm.xchart:xchart:3.5.2'
+    implementation "org.apache.commons:commons-csv:1.5"
+}
+
+
